@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/darw_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/main_page_toolbar"
+            layout="@layout/app_toolbar_layout">
+
+        </include>
+
+        <RelativeLayout
+            android:id="@+id/container_relativeLayout"
+            android:layout_below="@+id/main_page_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<EditText-->
+            <!--android:id="@+id/search_place_bar"-->
+            <!--android:layout_width="315dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:ems="10"-->
+            <!--android:hint="search any GoogleMap place ..."-->
+            <!--android:background="#fff"-->
+            <!--tools:ignore="RtlCompat" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/search_place_icon"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:onClick="onClick"-->
+            <!--tools:ignore="RtlCompat"-->
+            <!--android:src="@mipmap/search_icon_bar"/>-->
+
+            <EditText
+                android:id="@+id/search_place_firebase_bar"
+                android:layout_width="315dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:hint="search any AbuEl3orif place ..."
+                android:background="#fff"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                tools:ignore="RtlCompat" />
+
+            <ImageView
+                android:id="@+id/search_place_firebase_icon"
+                android:layout_width="70dp"
+                android:layout_height="69dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="12dp"
+                android:onClick="onClick"
+                android:src="@mipmap/search_icon_bar"
+                tools:ignore="RtlCompat" />
+
+            <RelativeLayout
+                android:id="@+id/second_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--<ImageView-->
+                <!--android:id="@+id/hospital_category_icon"-->
+                <!--android:layout_width="90dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:onClick="onClick"-->
+                <!--android:layout_marginBottom="40dp"-->
+                <!--android:src="@mipmap/hospital_icon_n"/>-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/school_category_icon"-->
+                <!--android:layout_width="90dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:onClick="onClick"-->
+                <!--android:layout_marginBottom="40dp"-->
+                <!--android:layout_toEndOf="@+id/hospital_category_icon"-->
+                <!--android:src="@mipmap/school_icon_n"-->
+                <!--android:layout_toRightOf="@+id/hospital_category_icon" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/resturant_category_icon"-->
+                <!--android:layout_width="90dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:onClick="onClick"-->
+                <!--android:layout_marginBottom="40dp"-->
+                <!--android:layout_toEndOf="@+id/school_category_icon"-->
+                <!--android:src="@mipmap/resturant_icon_n"-->
+                <!--android:layout_toRightOf="@+id/hospital_category_icon" />-->
+                <Spinner
+                    android:id="@+id/sp_area_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="85dp"
+                    android:gravity="center"
+                    android:paddingLeft="140dp"
+                    android:paddingRight="50dp"
+                    android:prompt="@string/choose_category_type">
+
+                </Spinner>
+
+                <Spinner
+                    android:id="@+id/sp_category_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="139dp"
+                    android:gravity="center"
+                    android:paddingLeft="140dp"
+                    android:paddingRight="50dp"
+                    android:prompt="@string/choose_category_type">
+
+                </Spinner>
+
+                <Button
+                    android:id="@+id/btn_map_filter"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="209dp"
+                    android:background="@drawable/inputs"
+                    android:gravity="center"
+                    android:text="Filter"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <!--android:layout_width="250dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:text="Edit question"-->
+                <!--android:layout_marginTop="40dp"-->
+                <!--android:textSize="14sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="#fff"-->
+                <!--android:background="@drawable/inputs"-->
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:layout_below="@+id/container_relativeLayout"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="330dp"
+            tools:context=".GoogleMapsActivity"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            tools:ignore="RtlCompat" />
+
+        <!--<FrameLayout-->
+        <!--android:id="@+id/main_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="669dp"-->
+        <!--android:layout_below="@+id/main_page_toolbar"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginTop="6dp"-->
+        <!--android:layout_marginBottom="0dp">-->
+
+        <!--&lt;!&ndash; <android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/all_users_post_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignStart="@+id/main_container"-->
+        <!--android:layout_alignLeft="@+id/main_container" />&ndash;&gt;-->
+        <!--</FrameLayout>-->
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginBottom="3dp"
+        app:menu="@menu/navigation_menu">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

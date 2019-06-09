@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="drawer_open">Drawer open</string>
+    <string name="drawer_close">Drawer close</string>
+    <string name="title_activity_google_maps">Map</string>
+    <string name="choose_category_type">Choose Category Type</string>
+    <string name="choose_category_area">Choose Category Area</string>
+    <string name="title_activity_maps_get_user_location">Map</string>
+    <string name="title_activity_edit_comment">EditComment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--  authentication face  -->
+    <string name="facebook_app_id">342183503136386</string>
+    <string name="fb_login_protocol_scheme">fb342183503136386</string>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionCommentsActivity">
+
+    <include
+        android:id="@+id/update_question_comment_toolbar"
+        layout="@layout/app_toolbar_layout" />
+
+    <EditText
+        android:id="@+id/add_question_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:hint="Write your Comment here ...!?"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/add_question_comment_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:text="Add comment"
+        android:textColor="@color/primaryText"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:background="@drawable/inputs"/>
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="210dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/all_users_category_questions_comments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </FrameLayout>
+
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+    <!--android:id="@+id/nav_profile_img"-->
+    <!--android:layout_width="145dp"-->
+    <!--android:layout_height="129dp"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_marginStart="80dp"-->
+    <!--android:layout_marginLeft="80dp"-->
+    <!--android:layout_marginTop="12dp"-->
+    <!--android:src="@drawable/profile_icon"-->
+    <!--app:civ_border_color="@color/colorPrimary"-->
+    <!--app:civ_border_width="2dp" />-->
+
+
+</RelativeLayout>

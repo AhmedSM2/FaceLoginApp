@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/imageViewSplach1"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp"
+
+            android:src="@drawable/ic_abo_el_aoref_splash1"/>
+        <ImageView
+            android:id="@+id/imageViewSplach2"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp"
+
+            android:src="@drawable/ic_abo_el_3oref_splash2"/>
+
+        <ImageView
+            android:id="@+id/imageViewSplach3"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp"
+
+            android:src="@drawable/ic_abo_el_3oref_splash3"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

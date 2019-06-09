@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewPostActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/new_Post_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/new_Post_Txt"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:ems="10"
+            android:hint="Add Post Here ..."
+            android:padding="10dp"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/new_Post_Img"
+            android:layout_width="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/cameraicon" />
+
+        <Button
+            android:id="@+id/new_Post_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:padding="16dp"
+            android:text="Add New Post"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

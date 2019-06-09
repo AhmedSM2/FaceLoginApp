@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nave_home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/followAbo"
+        android:title="AboElo3ref"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/ask_question"
+        android:title="Ask Question"
+        android:icon="@drawable/confirm"/>
+    <item
+        android:id="@+id/add_post"
+        android:title="Create Post"
+        android:icon="@drawable/select_image"/>
+    <item
+        android:id="@+id/show_post"
+        android:title="Show_All_Posts "
+        android:icon="@drawable/add_post"/>
+    <item
+        android:id="@+id/make_chat"
+        android:title="Chat"
+        android:icon="@drawable/messages"/>
+
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="my profile"
+        android:icon="@drawable/profile"/>
+
+    <item
+        android:id="@+id/nav_saved_comments"
+        android:title="saved comments"
+        android:icon="@drawable/ic_saved_comments"/>
+
+    <item
+        android:id="@+id/nav_followers"
+        android:title="followers"
+        android:icon="@drawable/friends"/>
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="settings"
+        android:icon="@drawable/settings"/>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="logout"
+        android:icon="@drawable/logout"/>
+
+
+
+</menu>

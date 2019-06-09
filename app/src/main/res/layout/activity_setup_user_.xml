@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".setup_user_Activity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setup_user_pp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:src="@drawable/ic_pp" />
+
+    <EditText
+        android:id="@+id/setup_user_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/setup_user_pp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/ic_username"
+        android:ems="10"
+        android:hint="username"
+        android:padding="2dp" />
+
+
+    <EditText
+        android:id="@+id/setup_user_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/setup_user_username"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/ic_fullname"
+        android:ems="10"
+        android:hint="fullname"
+        android:padding="2dp" />
+
+
+    <Spinner
+        android:id="@+id/AreaSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:layout_below="@+id/setup_user_Address"
+        ></Spinner>
+
+
+    <EditText
+        android:id="@+id/setup_user_Address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/setup_user_fullname"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/ic_address"
+
+        android:ems="10"
+        android:hint="Enter your Address :"
+        android:padding="2dp" />
+
+
+
+
+    <Button
+        android:id="@+id/setup_user_location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/AreaSpinner"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_no_color"
+        android:drawableLeft="@drawable/ic_location"
+        android:paddingLeft="30dp"
+        android:gravity="center"
+        android:text="Get location"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/primaryText"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/setup_user_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/setup_user_location"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/border_design"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="save"
+        android:padding="2dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

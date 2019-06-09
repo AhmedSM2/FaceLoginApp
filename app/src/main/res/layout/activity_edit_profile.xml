@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="405dp">
+
+                <LinearLayout
+                    android:background="@drawable/gradient_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="130dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/profile"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="45dp"/>
+                    <EditText
+                        android:id="@+id/edit_profile_username_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="User Name"
+                        android:textColor="@color/textAndIcons"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardViewId"
+                    android:layout_width="350dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="275dp"
+                    android:layout_marginEnd="20dp">
+
+                    <EditText
+                        android:id="@+id/profile_edit_bio_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:hint=" ex: my name is alaa , i live in new cairo since 2004 ,i love my city and know more about it ^_^"
+                        android:textAlignment="center"
+                        android:textColor="@color/primaryText"
+                        android:textSize="16dp" />
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_email_x"/>
+                    <EditText
+                        android:id="@+id/profile_edit_email_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="username@gmail.com"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_phone_in_talk_black_24dp"/>
+                    <EditText
+                        android:id="@+id/profile_edit_phone_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="01142815672"
+                        android:layout_marginRight="50dp"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_location_city_black_24dp"/>
+                    <EditText
+                        android:id="@+id/profile_edit_address_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20 fath street l tgmoaa l talet"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_location_on_black_24dp"/>
+                    <Spinner
+                        android:id="@+id/area_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My Area"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"/>
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/save_edit_profile_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/textAndIcons"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    />
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

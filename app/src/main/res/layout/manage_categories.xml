@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/manage_category_toolbar"
+        layout="@layout/app_toolbar_layout"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/add_category_link"
+        android:layout_width="81dp"
+        android:layout_height="53dp"
+        android:layout_alignStart="@+id/manage_area_toolbar"
+        android:layout_alignLeft="@+id/manage_area_toolbar"
+        android:layout_marginStart="303dp"
+        android:layout_marginLeft="303dp"
+        android:src="@drawable/plus1"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/all_area_cat"
+        android:layout_width="match_parent"
+        android:layout_height="524dp"
+        android:layout_alignTop="@+id/manage_area_toolbar"
+        android:layout_marginTop="68dp"
+        tools:ignore="MissingConstraints" />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="425dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/blueDark"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/textClose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="8dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="X"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/cerclebackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+        <Spinner
+            android:id="@+id/sp_area_filter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:prompt="@string/choose_category_type"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingRight="50dp">
+
+        </Spinner>
+
+        <Spinner
+
+            android:id="@+id/sp_category_filter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:prompt="@string/choose_category_type"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingRight="50dp">
+        </Spinner>
+
+        <Button
+            android:id="@+id/btn_question_filtter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ask"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_style"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

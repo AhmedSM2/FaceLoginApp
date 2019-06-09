@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Category_Activity">
+
+    <EditText
+        android:id="@+id/category_name_txt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:hint="write category Name..."
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/category_lat_txt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="160dp"
+        android:hint="Pick Category Location..."
+        android:background="@drawable/btn_style"
+        android:gravity="center"/>
+
+
+
+    <Spinner
+        android:id="@+id/category_type_txt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="249dp"
+        android:gravity="center"
+        android:paddingLeft="140dp"
+        android:prompt="@string/choose_category_type"
+        android:paddingRight="50dp">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/category_rate_txt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="320dp"
+        android:hint="write category rate..."
+        android:gravity="center" />
+
+
+    <Spinner
+        android:id="@+id/category_Area"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:paddingLeft="140dp"
+        android:prompt="@string/choose_category_area"
+        android:paddingRight="50dp">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/btn_save_category"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Save category"
+        android:layout_marginTop="500dp"/>
+
+
+
+
+
+
+</RelativeLayout>

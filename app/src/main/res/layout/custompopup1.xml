@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/blueDark"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    tools:context=".custompopupActivity">
+
+    <TextView
+        android:id="@+id/textClose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="X"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/cerclebackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+        <Spinner
+            android:id="@+id/sp_Qarea_filter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:prompt="@string/choose_category_type">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/sp_Qcategory_filter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:prompt="@string/choose_category_type">
+        </Spinner>
+
+        <Button
+            android:id="@+id/btn_question_filtter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ask"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_style"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

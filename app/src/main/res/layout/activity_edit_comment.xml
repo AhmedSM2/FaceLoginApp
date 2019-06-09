@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditPostActivity">
+
+    <EditText
+        android:id="@+id/editComment_text"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:layout_marginTop="15dp"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:isScrollContainer="true"
+        android:keepScreenOn="false"
+        android:lineSpacingExtra="8sp"
+        android:lines="1"
+        android:padding="6dp"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:verticalScrollbarPosition="left" />
+
+    <Button
+        android:id="@+id/eidtComment_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Edit Comment" />
+
+
+
+</LinearLayout>
